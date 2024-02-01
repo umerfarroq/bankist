@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="main">
+        <div class="nav-container">
+        <div class="nav">
+            <div class="nav-login">
+                <h3 class="login-message">Log in to get started</h3>
+            </div>
+            <div class="logo"><img src="logo.png" alt="logo" ></div>
+            <div class="login-form">
+                <form action="">
+                <input type="text" class="input-user input-login-user" placeholder="User" >
+                <input type="password" class="input-user input-login-password" placeholder="Pin" maxlength="4" >
+                <button id="login-btn" class="btn-login">→</button>
+            </form>
+            </div>
+        </div>
+    </div>
+        <div class="main-app-container">
+        <div class="mian-app">
+            <div class="main-app-heading">
+                <div class="current-balance1">
+                    <p class="balance-label1">Current balance</p>
+                    <p class="balance-date"> As of <span class="date">05/03/2037</span></p>
+
+                </div>
+                <div class="currenct-balance2">
+                    <p class="balance-value">00000€</p>
+                </div>
+            </div>
+            <div class="main-app-bottom">
+                <div class="movements">
+                    <div class="movements-row">
+                        <div class="movements-type">
+                            <p class="movements-type-para movements-type-deposit">2 DEPOSIT</p>
+                            <div class="movements-date">
+                                <p> 3 days ago</p>
+                            </div>
+                        </div>
+                       
+                        <div class="movements-amount"> 
+                            <p>4000 €</p>
+                        </div>
+                    </div>
+                    <div class="movements-row">
+                        <div class="movements-type">
+                            <p class="movements-type-para movements-type-withdrawal">2 WITHDRAWAL</p>
+                            <div class="movements-date">
+                                <p> 3 days ago</p>
+                            </div>
+                        </div>
+                       
+                        <div class="movements-amount"> 
+                            <p>-3000 €</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="transactions">
+                    <div class="transfer-money">
+                        <div class="transfer-money-heading">
+                            <p>Transfer money</p>
+                        </div>
+                        <div class="transfer-money-input">
+                            <div class="input-field-transfer">
+                            <input type="text" class="transfer-money-input-field transfer-account" >
+                            
+                            <label for="text" class="input-label">Transfer to</label>
+                        </div>
+                        <div class="input-field-amount">
+                            
+                            <input type="text" class="transfer-money-input-field transfer-amount">
+                            
+
+                            <label for="text" class="input-label">Amount</label>
+                        </div>
+                            
+                            <button class="btn-transfer"><i class="ri-arrow-right-line" ></i></button>
+                        </div>
+                    </div>
+                    <div class="request-lone">
+                        <div class="transfer-money-heading">
+                            <p>Request Lone</p>
+                        </div>
+                        <div class="transfer-money-input request-lone-input">
+                            <div class="input-field-transfer input-field-request-lone">
+                            <input type="text" class="transfer-money-input-field lone-input-field" >
+                            
+                            <label for="text" class="input-label input-label-request">Amount</label>
+                        </div>
+                      
+                            
+                            <button class="btn-transfer btn-request-lone"><i class="ri-arrow-right-line" ></i></button>
+                        </div>
+
+                    </div>
+                    <div class="close-account">
+                        <div class="transfer-money-heading">
+                            <p>Close account</p>
+                        </div>
+                        <div class="transfer-money-input">
+                            <div class="input-field-transfer">
+                            <input type="text" class="transfer-money-input-field input-closeacc-user" >
+                            
+                            <label for="text" class="input-label ">Confirm User</label>
+                        </div>
+                        <div class="input-field-amount">
+                            
+                            <input type="text" class="transfer-money-input-field input-closeacc-pin">
+                            
+
+                            <label for="text" class="input-label">confirm PIN</label>
+                        </div>
+                            
+                            <button class="btn-transfer btn-close-acc" ><i class="ri-arrow-right-line" ></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-sec">
+            <div class="bottom-sec-left">
+                <div class="in bottom-text-sec">
+                    <p class="para-bottom">IN</p>
+                    <p class="bottom-amount bottom-amount-in">0000€</p>
+                </div>
+                <div class="out bottom-text-sec">
+                    <p class="para-bottom"> OUT</p>
+                    <p class="bottom-amount bottom-amount-out">0000€</p>
+                </div>
+                <div class="interest bottom-text-sec">
+                    <p class="para-bottom ">INTEREST</p>
+                    <P class="bottom-amount bottom-amount-interst">00000€</P>
+                </div>
+                <div class="sort">
+                    <button class="btn-sort"><i class="ri-arrow-down-line"></i></button>
+                    <p class="btn-sort-txt">SORT</p>
+                </div>
+            </div>
+            <div class="bottom-sec-right">
+                <p class="logout-timer">
+                    You will be logged out in <span class="timer">05:00</span>
+                  </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
